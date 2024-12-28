@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/infiniteOcean.JPG" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Japan Scenary</title>
+</head>
+
+<body>
+  <div id="orientation-message">
+    <p>
+      Please rotate your device for the best viewing experience.
+    </p>
+  </div>
+  <div id="loading-screen">
+    <div id="loading-container">
+      <div id="loading-progress">
+        <svg class="progress-ring" width="200" height="200">
+          <circle class="progress-ring__circle" stroke="white" stroke-width="4" fill="transparent" r="90" cx="100"
+            cy="100" />
+        </svg>
+        <div id="progress-text">0%</div>
+      </div>
+      <div id="loading-text">Loading...</div>
+    </div>
+    <button id="start-button">
+      <span></span>
+      Enter Japan Scenary
+    </button>
+    <audio id="background-music" src="/ghibli.mp3" type="audio/mp3"></audio>
+    <div id="controls-container">
+      <h3 id="keyboard-controls-header">Keyboard Controls</h3>
+      <div id="control-panel">
+        <button id="move-left" class="control-button">
+          <span></span>
+          &#8592; = Move Left
+        </button>
+        <button id="toggle-sound" class="control-button">
+          <span></span>
+          m = Toggle Sound
+        </button>
+        <button id="move-right" class="control-button">
+          <span></span>
+          &#8594; = Move Right
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="scene-container"></div>
+  <div id="app"></div>
+  <button id="volume-toggle">Toggle Sound</button>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
